@@ -1,0 +1,29 @@
+import React from 'react';
+
+function Home() {
+  return (
+    <div>
+      <div style={{
+        backgroundColor: '#ebf4ff',
+        borderLeft: '4px solid #3b82f6',
+        padding: '20px',
+        marginBottom: '40px',
+        color: '#2d3748',
+        fontSize: '15px'
+      }}>
+        <strong style={{ color: '#1a202c' }}>Lab Task:</strong> Click the buttons above. Notice how the URL changes without the page refreshing.
+      </div>
+
+      <hr style={{ border: 'none', borderTop: '1px solid #e2e8f0', marginBottom: '40px' }} />
+
+      <h3 style={{ color: '#2d3748', marginBottom: '15px', fontSize: '16px', fontWeight: 'bold' }}>Quick Concept Recap:</h3>
+      <ul style={{ color: '#4a5568', lineHeight: '1.8', paddingLeft: '25px', fontSize: '15px' }}>
+        <li><strong>BrowserRouter:</strong> Keeps your UI in sync with the URL.</li>
+        <li><strong>Routes & Route:</strong> Map a specific path (like /about) to a component.</li>
+        <li><strong>Link:</strong> Used instead of &lt;a&gt; tags to prevent full page reloads.</li>
+      </ul>
+    </div>
+  );
+}
+
+export default Home;

@@ -1,0 +1,16 @@
+import React, { Component } from 'react';
+
+class About extends Component {
+  render() {
+    return (
+      <div style={{ marginTop: '20px' }}>
+        <h3 style={{ color: '#2d3748', marginBottom: '15px', fontSize: '1.2rem', fontWeight: 'bold' }}>About This Lab</h3>
+        <p style={{ color: '#4a5568', lineHeight: '1.8', fontSize: '15px' }}>
+          This component was created using ES6 Class syntax.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default About;

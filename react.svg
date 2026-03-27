@@ -1,0 +1,35 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+
+function App() {
+  return (
+    <Router>
+      <div style={{
+        fontFamily: '"Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+        width: '100%',
+        boxSizing: 'border-box',
+        padding: '50px 5%',
+        color: '#2d3748'
+      }}>
+        <div style={{ textAlign: 'center' }}>
+          <h1 style={{ color: '#1a202c', fontSize: '2.5rem', margin: '0 0 10px 0', fontWeight: '800' }}>Lab 02: React Navigation</h1>
+          <p style={{ color: '#a0aec0', fontSize: '1.1rem', margin: '0 0 40px 0' }}>Switch between components using React Router</p>
+        </div>
+        
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
